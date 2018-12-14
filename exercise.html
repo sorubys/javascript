@@ -1,0 +1,58 @@
+<html>
+<head>
+</head>
+<body>
+  <p id="squares1"></p>
+  <p id="squares2"></p>
+  <p id="squares3"></p>
+  <p id="squares4"></p>
+  <p id="volume"></p>
+  <p id="alert"></p>
+  <p id="person"></p>
+  <p id="bit"></p>
+  <p id="power"></p>
+<script>
+var a = 40;
+var b = 8;
+var output1 = addNum(40,8);
+var output2 = multiNum(40,8);
+var output3 = subtractNum(40,8);
+var output4 = divideNum(40,8);
+var length= 100;
+var width= 50;
+var height= 50;
+var volume=volume(100,50,50);
+var person = {firstName:"Nimal" , lastName:" Raj" , age:" 15", city:"Kandy"};
+var course = {courseName:"BIT" , courseFee:" Rs 150 000" , startDate:" 12.06.2018" , center:" Our Office"};
+document.getElementById("person").innerHTML = "My name is " + person.firstName + person.lastName + "." + "I am" + person.age + "years old." + "I live in " + person.city + ".";
+document.getElementById("bit").innerHTML = "Course Name: " + course.courseName + "<br>" + "Course Fee:" + course.courseFee + "<br>" + "Start Date:" + course.startDate + "<br>" + "Center:" + course.center;
+document.getElementById("squares1").innerHTML = "The addition of two numbers are:"+ output1;
+document.getElementById("squares2").innerHTML = "The multiplication of two numbers are:"+ output2;
+document.getElementById("squares3").innerHTML = "The subtraction of two numbers are:"+ output3;
+document.getElementById("squares4").innerHTML = "The divison of two numbers are:"+ output4;
+document.getElementById("volume").innerHTML="The volume of a cuboid is:"+volume;
+document.getElementById("power").innerHTML=Math.pow(12,2);
+window.alert("Hello world");
+
+function addNum(a, b) {
+  return a + b;
+}
+function multiNum(a, b) {
+  return a * b;
+}
+function subtractNum(a, b) {
+  return a - b;
+}
+function divideNum(a, b) {
+  return a / b;
+}
+function volume(a, b, c) {
+  return a * b * c;
+}
+
+
+
+
+</script>
+</body>
+</html>
